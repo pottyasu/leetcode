@@ -12,7 +12,7 @@ func twoSum(nums []int, target int) []int {
 
 	for i, v1 := range nums {
 		comp := target - v1
-		if _, ok := hashmap[comp]; ok && hashmap[comp] != i {
+		if _, ok := hashmap[comp]; ok {
 			result = append(result, hashmap[comp], i)
 			break
 		}
